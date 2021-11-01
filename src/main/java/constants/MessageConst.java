@@ -1,7 +1,8 @@
 package constants;
 
-/*
- * 各出力メッセージを定義するクラス
+/**
+ * 各出力メッセージを定義するEnumクラス
+ *
  */
 public enum MessageConst {
 
@@ -42,5 +43,4 @@ public enum MessageConst {
     public String getMessage() {
         return this.text;
     }
-
 }

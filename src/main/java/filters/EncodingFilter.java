@@ -1,6 +1,7 @@
 package filters;
 
 import java.io.IOException;
+
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -19,12 +20,14 @@ public class EncodingFilter implements Filter {
      * Default constructor.
      */
     public EncodingFilter() {
+
     }
 
     /**
      * @see Filter#destroy()
      */
     public void destroy() {
+
     }
 
     /**
@@ -41,6 +44,7 @@ public class EncodingFilter implements Filter {
      * @see Filter#init(FilterConfig)
      */
     public void init(FilterConfig fConfig) throws ServletException {
+
     }
 
 }

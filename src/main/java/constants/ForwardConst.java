@@ -1,10 +1,10 @@
 package constants;
 
-/*
- * リクエストパラメータの変数名、変数値、jspファイルの名前等画面遷移に関わる値を定義
+/**
+ * リクエストパラメーターの変数名、変数値、jspファイルの名前等画面遷移に関わる値を定義するEnumクラス
+ *
  */
-
-public enum ForwardConst{
+public enum ForwardConst {
 
     //action
     ACT("action"),
@@ -40,33 +40,33 @@ public enum ForwardConst{
     FW_REP_NEW("reports/new"),
     FW_REP_EDIT("reports/edit");
 
-    /*
+    /**
      * 文字列
      */
     private final String text;
 
-    /*
+    /**
      * コンストラクタ
      */
     private ForwardConst(final String text) {
-        this.text=text;
+        this.text = text;
     }
 
-    /*
-     * 値（文字列）取得
+    /**
+     * 値(文字列)取得
      */
     public String getValue() {
         return this.text;
     }
 
-    /*
-     * 値（文字列）から、該当する定義を返却する
-     * （霊："Report"→ForewardConst.ACT_REP）
-     * @param 値（文字列）
-     * @return ForwardConst型定義
+    /**
+     * 値(文字列)から、該当する定数を返却する
+     * (例: "Report"→ForwardConst.ACT_REP)
+     * @param 値(文字列)
+     * @return ForwardConst型定数
      */
     public static ForwardConst get(String key) {
-        for(ForwardConst c:values()) {
+        for(ForwardConst c : values()) {
             if(c.getValue().equals(key)) {
                 return c;
             }

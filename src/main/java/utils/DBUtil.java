@@ -23,5 +23,4 @@ public class DBUtil {
 
         return emf;
     }
-
 }
