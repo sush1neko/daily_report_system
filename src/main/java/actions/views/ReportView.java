@@ -1,9 +1,8 @@
-package actions;
+package actions.views;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-import actions.views.EmployeeView;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -48,5 +47,10 @@ public class ReportView {
      * 登録日時
      */
     private LocalDateTime createdAt;
+
+    /*
+     * 更新日時
+     */
+    private LocalDateTime updatedAt;
 
 }

@@ -80,6 +80,12 @@ public class Report {
      */
     @Lob
     @Column(name=JpaConst.REP_COL_CONTENT, nullable=false)
+    private String content;
+
+    /*
+     * 日報の登録日時
+     */
+    @Column(name=JpaConst.REP_COL_CREATED_AT, nullable=false)
     private LocalDateTime createdAt;
 
     /*
